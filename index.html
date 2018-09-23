@@ -1,23 +1,67 @@
----
-layout: default
----
+<html>
 
-<div class="home">
+<head>
+  <title>Frank schrijft</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<nav>
+  <ul>
+    <li><a href="#about">OVER MIJ</a></li>
+    <li><a href="#stories">VERHALEN</a></li>
+    <li><a href="#contact">CONTACT & TOELICHTING</a></li>
   </ul>
+</nav>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="general">
+  <h2>Frank schrijft.</h2>
 </div>
+
+
+<div class="main" id="about">
+  <h3>Over mij</h3>
+  <p>Ik ben Frank en ik schrijf verhalen. Korte en lange verhalen over onderwerpen die mij boeien en naar voorbeelden die mij inspireren. Liefde, lust, vraatzucht, leven, Roald Dahl, Dimitri Verhulst, Willem Frederik Hermans. Ik beschouw me zelf als hobbyist die zo nu en dan een rake toon aanslaat en deze graag deelt. Hierbij drie van mijn rake tonen. Daarnaast heb ik in 2016 een boek geschreven over het tragische overlijdensverhaal van mijn ouders. Een persoonlijke ervaring ontstaan uit een bizarre situatie. Ik wens je veel plezier met het lezen van de verhalen en hoop te horen wat je ervan vind.
+    <br>Frank.</br>
+  </p>
+</div>
+
+<div class="longStory" id="stories">
+  <h2>Er is maar één werkelijkheid</h2>
+  <a href="https://s3-us-west-2.amazonaws.com/frankschrijftafb/Manuscript_Er+is+maar+een+werkelijkheid.pdf" class="button">PDF</a>
+  <a href="https://s3-us-west-2.amazonaws.com/frankschrijftafb/Manuscript_Er+is+maar+een+werkelijkheid.epub" class="button">eReader</a>
+</div>
+
+
+<div class="shortStories">
+  <div class="img1">
+    <h2>Blootgeven</h2>
+    <a href="https://s3-us-west-2.amazonaws.com/frankschrijftafb/Blootgeven.pdf" class="button">PDF</a>
+    <a href="https://s3-us-west-2.amazonaws.com/frankschrijftafb/Blootgeven.epub" class="button">eReader</a>
+  </div>
+  <div class="img2">
+    <h2>Vraatzucht</h2>
+    <a href="https://s3-us-west-2.amazonaws.com/frankschrijftafb/Vraatzucht.pdf" class="button">PDF</a>
+    <a href="https://s3-us-west-2.amazonaws.com/frankschrijftafb/Vraatzucht.epub" class="button">eReader</a>
+  </div>
+  <div class="img3">
+    <h2>Liefde</h2>
+    <a href="https://s3-us-west-2.amazonaws.com/frankschrijftafb/Liefde.pdf" class="button">PDF</a>
+    <a href="https://s3-us-west-2.amazonaws.com/frankschrijftafb/Liefde.epub" class="button">eReader</a>
+  </div>
+</div>
+
+
+<footer class="footer" id="contact">
+  <p>Contact: franklandheer@hotmail.com</p>
+
+    <p1>De verhalen worden in PDF of Epub gedownload. Vervolgens kan je deze op je tablet of eReader (<a href="https://nl.kobo.com/help/nl-NL/article/3171/boeken-toevoegen-aan-je-kobo-ereader?products=Overdrive" class="">Kobo</a>) plaatsen. </p1>
+</footer>
+
+</body>
+
+</html>
+</div>
+
