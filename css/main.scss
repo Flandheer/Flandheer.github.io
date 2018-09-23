@@ -1,53 +1,158 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
+body {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+    font-family: Trebuchet MS, helvetica, 'sans-serif';
+    font-size: 2.00em;
+}
 
+h1 {
+	font-size: 32px;
+  font-family: Palantino, 'Palatino Linotype', serif;
+  color: rgb(121,149,117);
+}
 
+h2 {
+	font-size: 56px;
+}
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+p {
+ font-size: 1.5rem;
+       line-height: 1.5;
+       margin-bottom: 20px;
+}
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+p1 {
+ font-size: 1.1rem;
+       line-height: 1.0;
+       margin-bottom: 5px;
 }
 
 
+ul li{
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      }
+
+a { text-decoration: none; color:DimGray; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+
+
+.footer {
+    background-color: #F5F5F5;
+    height: 80px;
+    width: 100%;
+    min-width: 300px;
+    position: relative;
+    }
+
+
+.general {
+	padding: 400px 0;
+	margin: 0px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/frankschrijftafb/DSC00832.JPG");
+  background-size: cover;
+  color: #ffffff;
+  
+}
+
+.longStory {
+	padding: 150px 0;
+	margin: 0px;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 1.25em;
+  background-image: url("https://s3-us-west-2.amazonaws.com/frankschrijftafb/Kaft+Boek+2.0.png");
+  background-size: cover;
+  color: #ffffff;
+
+}
+.shortStories {
+        display:inline-block;
+        white-space:nowrap;
+        height: 350px;
+}
+
+.img1 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 1.25em;
+  background-image: url("https://s3-us-west-2.amazonaws.com/frankschrijftafb/Lust.jpg");
+  background-size: cover;
+  color: #ffffff;
+  width: 30%;
+  border: 20px solid white;
+}
+
+.img2 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 1.25em;
+  background-image: url("https://s3-us-west-2.amazonaws.com/frankschrijftafb/Vraatzucht.JPG");
+  background-size: cover;
+  color: #ffffff;
+  width: 30%;
+  border: 20px solid white;
+
+}
+
+.img3 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 1.25em;
+  background-image: url("https://s3-us-west-2.amazonaws.com/frankschrijftafb/liefdeShort.png");
+  background-size: cover;
+  color: #ffffff;
+  width: 30%;
+  border: 20px solid white;
+}
+
+.shortStories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+    background-color: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.main {
+
+    padding-top: 10px;
+    padding-right: 130px;
+    padding-bottom: 10px;
+    padding-left: 130px;
+}
+
+#footer {
+ font-size: 0.75rem; 
+}
+
+nav {
+  background-color: #FFF;
+}
+
+nav li {
+  margin: 0;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+nav {
+    display: inline-block;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+}
